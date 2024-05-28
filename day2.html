@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://mbzuai-cl.github.io/2023/programday2/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href=".">--><base href=".">
+    <link rel="shortcut icon" type="image/png" href="https://mbzuai-cl.github.io/2023/assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="./MLLM2024_day2_files/main.css">
+    <meta name="description" content="MBZUAI Machine Learning for Large Models Workshop 2024">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>1st MBZUAI Machine Learning for Large Models Workshop 2024</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="./MLLM2024_day2_files/banner.jpeg" alt="MBZUAI Machine Learning for Large Models 2024 Banner">
+        <div class="top-left">
+           <span class="title2">1st MBZUAI Workshop on</span>
+            <br><br> <span class="title1">Machine Learning for Large Models</span> 
+            <!-- <br><br>
+            <span class="year">Empowering Sustainable Futures</span> -->
+        </div>
+        <div class="bottom-right">
+            June 3-4, 2024 <br> MBZUAI, Abu Dhabi
+        </div>
+    </div>
+
+   <table class="navigation">
+        <tbody><tr>
+            <td class="navigation">
+                <a class="current" title="Conference Home Page" href="MLLM2024.html">Home</a>
+            </td>
+            <td class="navigation">
+                <a title="Speakers List" href="speakerlist.html">Speakers List</a> 
+            </td>
+            <td class="navigation">
+                <a title="Conference Program" href="day1.html">Program Day 1</a> 
+            </td>
+            <!-- <td class="navigation">
+                <a title="Conference Program" href="https://mbzuai.ac.ae/">MBZUAI</a> 
+            </td> -->
+            <td class="navigation">
+                <a title="Conference Program Day 2" href="day2.html">Program Day 2</a> 
+            </td>
+        </tr>
+    </tbody></table>
+
+    <h2>Day 2 Program (Dec 10, Sun)</h2>
+
+    <table>
+        <tbody><tr class="speaker">
+            <td class="date" rowspan="2">
+                9:00am
+            </td>
+            <td class="title-special">
+                Opening.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
+                Notice that the title is styled differently than the ones for talks. -->
+            </td>
+        </tr>
+    </tbody></table>
+
+
+
+    <table id="Michael I. Jordan">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                9:30am
+            </td>
+            <td class="title">
+                Federated Learning in Practice: Reflections and Projections
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://scholar.google.com/citations?user=m8NUgw0AAAAJ&amp;hl=en/"><b>Peter Kairouz</b></a> (Google)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Introduced in 2016 as a privacy-enhancing technique, federated learning has made significant strides in recent years. This presentation offers a retrospective view, delving into the foundational principles of federated learning, encompassing the diverse variants and definitions presented in the 'Advances and Open Problems in Federated Learning' manuscript. We highlight key milestones, spotlighting the major implementations within the Google ecosystem and explaining the meticulous efforts dedicated to the fusion of federated learning with secure aggregation and formal differential privacy guarantees. We also touch on the nascent trends on the horizon and provide insights into the evolving landscape of federated learning and its definitions. These evolutionary steps are essential to perpetuate its practical impact.
+        </td></tr>
+    </tbody></table>
+
+
+
+    <table id="David Dao">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                9:50am
+            </td>
+            <td class="title">
+                Compression: Exact Error Distribution and tight convergence rates for Federated Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Aymeric Dieuleveut</b></a> (Ecole Polytechnique)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Compression schemes have been extensively used in Federated Learning (FL) to reduce the communication cost of distributed learning. While most approaches rely on a bounded variance assumption of the noise produced by the compressor, we investigate two aspects to gain better understanding of the impact of compression on dynamics.
+First, we show the use of compression and aggregation schemes that produce a specific error distribution, e.g., Gaussian or Laplace, on the aggregated data. We present and analyze different aggregation schemes based on layered quantizers achieving exact error distribution. We provide different methods to leverage the proposed compression schemes to obtain compression-for-free in differential privacy applications. Our general compression methods can recover and improve standard FL schemes with Gaussian perturbations such as Langevin dynamics and randomized smoothing.
+Second, we go beyond the classical worst-case analysis. To do so, we focus on the case of least-squares regression (LSR) and analyze a general stochastic approximation algorithm for minimizing quadratic functions relying on a random field. We consider weak assumptions on the random field, tailored to the analysis (specifically, expected Holder regularity), and on the noise covariance, enabling the analysis of various randomizing mechanisms, including compression.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Eric Xing">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                10:10am
+            </td>
+            <td class="title">
+                <font color="red"> (Keynote) </font> SuperFed: Cost-Efficient Federated Neural Architecture Search for On-Device Inference
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Alexey Tumanov</b></a> (Georgia Tech)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Neural Architecture Search (NAS) for Federated Learning (FL) is an emerging field to automate the design and training of Deep Neural Networks (DNNs) when data cannot be centralized due to privacy, communication costs, and regulatory restrictions. Recent federated NAS methods not only reduce manual effort but also provide more accuracy than traditional FL like FedAvg which use predefined DNN architectures. However, most state-of-the-art federated NAS methods follow a multi-stage FL training that often leads to high communication costs. Furthermore, these methods severely restrict DNN architecture diversity and thereby provide sub-optimal architectures when on-device inference metrics like latency/FLOPs are considered. To address these challenges, we propose SuperFed: a single-stage federated NAS method that jointly trains a rich diversity of deep neural network (DNN) subarchitectures (subnets) contained inside a single DNN supernetwork. Clients can then perform NAS locally to find specialized DNNs by extracting different parts of the trained supernet with no additional training. SuperFed takes O(1) (instead of O(k)) cost to find specialized DNN architectures in FL for any k hardware/latency targets. As part of SuperFed, we introduce MaxNet — a novel FL training algorithm that performs joint federated optimization of a large number of DNN architectures cost-efficiently. MaxNet trains a family of ≈ 5*10^8 diverse subnets with an order of magnitude reduction in communication and computatoin cost compared to state-of-the-art.
+        </td></tr>
+    </tbody></table>
+
+
+
+    <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                10:40pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+
+
+
+
+    <table id="David Dao">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:00am
+            </td>
+            <td class="title">
+                First Order Methods with Markovian Noise: from Acceleration to Variational Inequalities
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Serguei Samsonov</b></a> (HSE)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We present a unified approach for the theoretical analysis of first-order gradient methods for stochastic optimization and variational inequalities involving Markovian noise. Our approach covers scenarios for both non-convex and strongly convex minimization problems. To achieve an optimal (linear) dependence on the mixing time of the underlying noise sequence, we use the randomized batching scheme, which is based on the multilevel Monte Carlo method. Moreover, our technique allows us to eliminate the limiting assumptions of previous research on Markov noise, such as the need for a bounded domain and uniformly bounded stochastic gradients. Our extension to variational inequalities under Markovian noise is original. Additionally, we provide lower bounds that match the oracle complexity of our method in the case of strongly convex optimization problems
+        </td></tr>
+    </tbody></table>
+
+
+
+    <table id="Samuel Horvath">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:20am
+            </td>
+            <td class="title">
+                Uncovering Low-Rank Structures via Trainable Decompositions
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Stefanos Laskaridis</b></a> (BRAVE)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                "Deep Neural Networks (DNNs) have been a large driver and enabler for AI breakthroughs in recent years. These models have been getting larger in their attempt to become more accurate and tackle new upcoming use-cases. However, the training process of such large models is a costly and time-consuming process, which typically yields a single model to fit all targets. To mitigate this, various techniques have been proposed in the literature, including pruning, sparsification or quantization of the model weights and updates. While able to achieve high compression rates, they often incur computational overheads or accuracy penalties. Alternatively, factorization methods have been leveraged to incorporate low-rank compression in the training process. Similarly, such techniques (e.g. SVD) frequently rely on the computationally expensive decomposition of layers and are potentially sub-optimal for non-linear models, such as DNNs. 
+
+In this talk, we are showcasing Maestro, a framework for trainable low-rank layers. Instead of regularly applying a priori decompositions such as SVD, the low-rank structure is built into the training process through a generalized variant of Ordered Dropout. This method imposes an importance ordering via sampling on the decomposed DNN structure. Our theoretical analysis demonstrates that our method recovers the SVD decomposition of linear mapping on uniformly distributed data and PCA for linear autoencoders. We further apply our technique on DNNs and empirically illustrate that Maestro enables the extraction of lower footprint models that preserve model performance while allowing for graceful accuracy-latency tradeoff for the deployment to devices of different capabilities."
+        </td></tr>
+    </tbody></table>
+
+    <table id="Eric Xing">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:40am
+            </td>
+            <td class="title">
+                TBD
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="http://www.cs.cmu.edu/~epxing/"><b>Eric Xing</b></a> (MBZUAI and CMU)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                TBD
+        </td></tr>
+    </tbody></table>
+
+    <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title-special">
+                Lunch and Poster Session
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+
+    <table id="Eric Xing">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                2pm
+            </td>
+            <td class="title">
+                <font color="red"> (Keynote) </font> Collaborative Learning in Medical Imaging
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.nmr.mgh.harvard.edu/user/8165/"><b>Jayashree Kalpathy-Cramer</b></a> (UC Boulder)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Machine learning has shown impressive potential in healthcare, particularly in medical imaging. A lack of access to care in many parts of the globe highlights the need to develop safe and equitable algorithms using diverse datasets.  Despite a surge in research applying deep learning (DL) to problems in healthcare, there remains a gap in its translational impact. Critical hurdles in safely deploying DL algorithms are concerns around brittleness, bias and fairness. The creation of extensive, multi-institutional datasets can enhance model performance and generalizability, but assembling such datasets is challenging due to patient privacy concerns, regulatory hurdles, and financial constraints. Collaborative learning offers a promising way to build more robust models by leveraging diverse datasets without the need to share the data directly. Foundational approaches have also been proposed to address some of these challenges. But challenges remain when dealing with small or heterogenous datasets, as is frequently seen in healthcare.This talk will explore collaborative learning applications in fields such as radiology, oncology, and ophthalmology. We will wrap up with an overview of the practical and theoretical challenges faced in implementing collaborative learning in healthcare contexts.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Eric Xing">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                2:30pm
+            </td>
+            <td class="title">
+                <font color="red"> (Keynote) </font> Humanitarian Collaborative Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.anniehartley.info/"><b>Mary-Anne Hartley</b></a> (Yale and EPFL)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Humanitarian response aims to reduce preventable deaths and uphold human rights in situations of acute need at scale, such as wars, conflicts, and natural disasters. Organizations such as the International Committee of the Red Cross (ICRC) have been meticulously documenting their interventions in billions of pieces of multimodal data for over a century across 160 countries during countless emergencies. Their data represent the world’s most vulnerable populations and contain invaluable information that could better inform their own responses, as well as broader and longer-term initiatives to reduce inequities, such as the United Nations' Sustainable Development Goals.
+ 
+In practice, however,the data is fragmented across multiple humanitarian actors who do not have the capacity to analyze, harmonize, or anonymize it, and ultimately, this precious information is rarely used beyond basic internal reporting in Excel sheets. 
+
+In this talk, I will share my experience of collaborating with several NGOs to make data-driven tools for humanitarian interventions. I will make a semantic mapping of the seven cardinal humanitarian principles (neutrality, impartiality, independence, humanity, voluntary service, unity, universality) with distributed learning and also highlight methodological approaches that could integrate humanitarian principles into the design of these tools to better ensure real-world adoption.
+        </td></tr>
+    </tbody></table>
+
+
+
+    <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                3:00pm
+            </td>
+            <td class="title-special">
+                Panel Discussion and Coffee
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+
+    
+
+    
+
+    
+
+
+</body></html>
