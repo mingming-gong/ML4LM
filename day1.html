@@ -50,27 +50,58 @@
 
     <h2>Day 1 Program (June 3, Mon)</h2>
 
-    <table>
+    <table id="Eric Xing">
         <tbody><tr class="speaker">
-            <td class="date" rowspan="2">
-                9:00am
+            <td class="date" rowspan="3">
+                9:00 am
             </td>
-            <td class="title-special">
-                Registration and Opening!
+            <td class="title">
+                Openning remarks
             </td>
         </tr>
         <tr>
-            <td class="abstract">
-                <!-- Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks. -->
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/professor-eric-xing/"><b>Eric Xing</b></a> (MBZUAI)
             </td>
         </tr>
     </tbody></table>
 
-    <table id="Hadi Abdine">
+    <table id="Quanquan Gu">
         <tbody><tr>
             <td class="date" rowspan="3">
-                9:30am
+                9:30 am
+            </td>
+            <td class="title">
+                Self-Play Preference Optimization for Language Model Alignment
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="http://web.cs.ucla.edu/~qgu/"><b>Quanquan Gu</b></a> (UCLA)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Traditional reinforcement learning from human feedback (RLHF) approaches relying on parametric models like the Bradley-Terry model 
+                fall short in capturing the intransitivity and irrationality in human preferences. Recent advancements suggest that directly working 
+                with preference probabilities can yield a more accurate reflection of human preferences, enabling more flexible and accurate language 
+                model alignment. In this talk, I will introduce a self-play-based method for language model alignment, which treats the problem as a 
+                constant-sum two-player game aimed at identifying the Nash equilibrium policy. Our approach, dubbed \textit{Self-Play Preference Optimization} 
+                (SPPO), approximates the Nash equilibrium through iterative policy updates and enjoys theoretical convergence guarantee. Our method can 
+                effectively increase the log-likelihood of the chosen response and decrease that of the rejected response, which cannot be trivially 
+                achieved by symmetric pairwise loss such as Direct Preference Optimization (DPO) and Identity Preference Optimization (IPO). In our 
+                experiments, using only 60k prompts (without responses) from the UltraFeedback dataset and without any prompt augmentation, by leveraging 
+                a pre-trained preference model PairRM with only 0.4B parameters, SPPO can obtain a model from fine-tuning Mistral-7B-Instruct-v0.2 that 
+                achieves the state-of-the-art length-controlled win-rate of 28.53% against GPT-4-Turbo on AlpacaEval 2.0. It also outperforms the (iterative) 
+                DPO and IPO on MT-Bench and the Open LLM Leaderboard. Notably, the strong performance of SPPO is achieved without additional external 
+                supervision (e.g., responses, preferences, etc.) from GPT-4 or other stronger language models.
+        </td></tr>
+    </tbody></table>
+    
+     <table id="Hadi Abdine">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                10:00am
             </td>
             <td class="title">
                 Beyond Classification: Multimodal Protein Function Prediction with Prot2Text
@@ -100,50 +131,12 @@
         </td></tr>
     </tbody></table>
 
+   
 
-    <table id="Timothy Baldwin">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://eltimster.github.io/www/"><b>Timothy Baldwin</b></a> (MBZUAI and The University of Melbourne)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-
-    <table id="Danqi Chen">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                10:10am
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://www.cs.princeton.edu/~danqic/"><b>Danqi Chen</b></a> (Princeton University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-    <table>
+     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
-                10:30pm
+                10:30am
             </td>
             <td class="title-special">
                 Coffee Break
@@ -155,138 +148,11 @@
             </td>
         </tr>
     </tbody></table>
-    <table id="Quanquan Gu">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                11:00 am
-            </td>
-            <td class="title">
-                Self-Play Preference Optimization for Language Model Alignment
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="http://web.cs.ucla.edu/~qgu/"><b>Quanquan Gu</b></a> (UCLA)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Traditional reinforcement learning from human feedback (RLHF) approaches relying on parametric models like the Bradley-Terry model 
-                fall short in capturing the intransitivity and irrationality in human preferences. Recent advancements suggest that directly working 
-                with preference probabilities can yield a more accurate reflection of human preferences, enabling more flexible and accurate language 
-                model alignment. In this talk, I will introduce a self-play-based method for language model alignment, which treats the problem as a 
-                constant-sum two-player game aimed at identifying the Nash equilibrium policy. Our approach, dubbed \textit{Self-Play Preference Optimization} 
-                (SPPO), approximates the Nash equilibrium through iterative policy updates and enjoys theoretical convergence guarantee. Our method can 
-                effectively increase the log-likelihood of the chosen response and decrease that of the rejected response, which cannot be trivially 
-                achieved by symmetric pairwise loss such as Direct Preference Optimization (DPO) and Identity Preference Optimization (IPO). In our 
-                experiments, using only 60k prompts (without responses) from the UltraFeedback dataset and without any prompt augmentation, by leveraging 
-                a pre-trained preference model PairRM with only 0.4B parameters, SPPO can obtain a model from fine-tuning Mistral-7B-Instruct-v0.2 that 
-                achieves the state-of-the-art length-controlled win-rate of 28.53% against GPT-4-Turbo on AlpacaEval 2.0. It also outperforms the (iterative) 
-                DPO and IPO on MT-Bench and the Open LLM Leaderboard. Notably, the strong performance of SPPO is achieved without additional external 
-                supervision (e.g., responses, preferences, etc.) from GPT-4 or other stronger language models.
-        </td></tr>
-    </tbody></table>
 
-    <table id="Samuel Horvath">
+ <table id="Francesco Locatello">
         <tbody><tr>
             <td class="date" rowspan="3">
-             11:20am
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-
-    
-
-    <table id="Nikhil Kandpal">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                11:40am
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://nkandpa2.github.io/"><b>Nikhil Kandpal</b></a> (University of Toronto)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-    <table>
-        <tbody><tr>
-            <td class="date" rowspan="2">
-                12:00pm
-            </td>
-            <td class="title-special">
-                Lunch
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </tbody></table>
-    <table id="Salman Khan">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                1:30pm
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://salman-h-khan.github.io/"><b>Salman Khan</b></a> (MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-
-    <table id="Hector Liu">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                1:50pm
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://hunterhector.github.io/"><b>Hector Liu</b></a> (Petuum and MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
-
-    <table id="Francesco Locatello">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                2:10pm
+                11:00am
             </td>
             <td class="title">
                 Are large models enough for causality? 
@@ -309,10 +175,110 @@
                 will present ISTAnt, the first real-world benchmark for estimating causal effects from high-dimensional observations in experimental ecology.
         </td></tr>
     </tbody></table>
+
+    <table id="Danqi Chen">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:30am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.cs.princeton.edu/~danqic/"><b>Danqi Chen</b></a> (Princeton University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+   
+
+   <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+ <table id="Timothy Baldwin">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                2:00pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://eltimster.github.io/www/"><b>Timothy Baldwin</b></a> (MBZUAI and The University of Melbourne)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Samuel Horvath">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+             2:30pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    
+
+    <table id="Nikhil Kandpal">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                3:00pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://nkandpa2.github.io/"><b>Nikhil Kandpal</b></a> (University of Toronto)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
-                2:30pm
+                3:30pm
             </td>
             <td class="title-special">
                 Coffee Break
@@ -324,81 +290,28 @@
             </td>
         </tr>
     </tbody></table>
-    <table id="Nils Hendrik Lukas">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                3:00pm
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://nilslukas.github.io"><b>Nils Hendrik Lukas</b></a> (MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
-        </td></tr>
-    </tbody></table>
 
-    <table id="Preslav Nakov">
+    <table id="Hector Liu">
         <tbody><tr>
             <td class="date" rowspan="3">
-                3:20pm
+                4:00pm-5:40pm
             </td>
             <td class="title">
-                Factuality Challenges in the Era of Large Language Models: Can We Keep LLMs Safe and Factual?
+                LLM360: DEMYSTIFYING LLM AND TOWARDS OPEN SOURCE AI (Special Session)
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/"><b>Preslav Nakov</b></a> (MBZUAI)
+                <a href="https://hunterhector.github.io/"><b>Hector Liu</b></a> (Petuum)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                We will discuss the risks, the challenges, and the opportunities that Large Language Models (LLMs) bring regarding factuality. We will then present a number of LLM fact-checking tools recently developed at MBZUAI: (i) Factcheck-Bench, a fine-grained evaluation benchmark and framework for fact-checking the output of LLMs, (ii) OpenFactVerification (Loki), an open-source tool for fact-checking the output of LLMs, developed based on Factcheck-Bench and optimized for speed and quality, (iii) OpenFactCheck, a framework for building customized fact-checking systems and for benchmarking entire LLMs, and (iv) LM-Polygraph, a tool to predict an LLM's uncertainty in its output using cheap and fast uncertainty quantification techniques. Finally, we will discuss the safety mechanisms we incorporated in Jais-chat, the world's best open Arabic-centric foundation and instruction-tuned LLM.
-        </td></tr>
-    </tbody></table>
+                The rapid advancements in Artificial Intelligence (AI) and Large Language Models (LLMs) have transformed numerous fields, yet their complexities often remain obscure to many. This talk aims to shed light on the building process of LLMs and promote the LLM360 initiative of open-source AI, offering both theoretical insights and practical knowledge for researchers and practitioners alike. <br><br>
 
-    <table id="Karthik Nandakumar">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                3:40pm
-            </td>
-            <td class="title">
-                To be determined.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://www.sprintai.org/nkarthik/"><b>Karthik Nandakumar</b></a> (MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                To be determined.
+                We will discuss the LLM360 project's commitment to open-source principles, highlighting our attempts to democratize AI by making LLM methodologies publicly available. The talk will then delve into the process of pretraining large language models using the LLM360 experiences materials, and provide an overview of research relevant to LLM training. We conclude by presenting a series of case studies that utilize the LLM360 artifacts showcasing LLM behavior and performance.
         </td></tr>
     </tbody></table>
 
     
-    <table>
-        <tbody><tr>
-            <td class="date" rowspan="2">
-                4:00pm
-            </td>
-            <td class="title-special">
-                Panel Discussion
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </tbody></table>
-
 </body></html>
