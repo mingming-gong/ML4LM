@@ -48,7 +48,7 @@
 
    
 
-    <h2>Day 1 Program (Dec 9, Sat)</h2>
+    <h2>Day 1 Program (June 3, Mon)</h2>
 
     <table>
         <tbody><tr class="speaker">
@@ -67,86 +67,79 @@
         </tr>
     </tbody></table>
 
-    <table id="Eric Moulines">
+    <table id="Hadi Abdine">
         <tbody><tr>
             <td class="date" rowspan="3">
                 9:30am
             </td>
             <td class="title">
-                Asynchronous Federated Learning meets Jackson networksson networks
+                Beyond Classification: Multimodal Protein Function Prediction with Prot2Text
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday1/"><b>Eric Moulines</b></a> (Ecole Polytechnique)
+                <a href="https://hadi-abdine.github.io"><b>Hadi Abdine</b></a> (Ecole Polytechnique)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Our research deals with the asynchronous federated learning, where the nodes have different computational speeds. In this dynamic environment, each node works on models with potential delays and contributes to updates on the central server at its own pace. Existing analyzes of such algorithms often focus on rough bounds on average and  maximum node delay, often overlooking the fundamental queuing dynamics inherent in the system.
-
-In this work, we present a novel non-uniform sampling scheme tailored to FL with Central Server but asynchronous updates. Our approach analysis is based on the underlying closed Jackson network structure inherent in the computational graph. Our carefully designed experiments conclusively demonstrate the efficiency of our method compared to current asynchronous algorithms, especially evident in the context of image classification.
-
-Our work sheds light on the importance of queueing dynamics and customized sampling strategies to improve system performance. This research provides a promising avenue for optimizing distributed machine learning in scenarios characterized by unequal computational capacities. 
+                In recent years, significant advancements have been made in protein function 
+                prediction through machine learning. However, most methods limit themselves 
+                to multi-classification, assigning predefined labels to proteins. This talk 
+                presents Prot2Text, a groundbreaking approach that predicts protein functions 
+                in a free text format, transcending traditional binary or categorical classifications. 
+                Prot2Text leverages an encoder-decoder framework, combining Graph Neural Networks (GNNs) 
+                and Large Language Models (LLMs) to integrate diverse data types such as protein sequences, 
+                structures, and textual annotations. This multimodal approach enables a comprehensive 
+                representation of protein functions, allowing for the generation of detailed and precise 
+                functional descriptions. We will discuss the evaluation of Prot2Text using a multimodal 
+                protein dataset extracted from SwissProt and share empirical results demonstrating its 
+                effectiveness. This work underscores the transformative potential of integrating GNNs and 
+                LLMs, providing researchers with advanced tools for more accurate and nuanced function prediction 
+                for both known and novel proteins.
         </td></tr>
     </tbody></table>
 
-    <table id="Michael I. Jordan">
+
+    <table id="Timothy Baldwin">
         <tbody><tr>
             <td class="date" rowspan="3">
                 9:50am
             </td>
             <td class="title">
-                Statistical Inference, Asymmetry of Information, and Statistical Contract Theory
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="http://people.eecs.berkeley.edu/~jordan/"><b>Michael I. Jordan</b></a> (UC Berkeley)
+                <a href="https://eltimster.github.io/www/"><b>Timothy Baldwin</b></a> (MBZUAI and The University of Melbourne)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Contract theory is the study of economic incentives when parties transact in the presence
-of private information.  We augment classical contract theory to incorporate a role for
-learning from data, where the overall goal of the adaptive mechanism is to obtain desired
-statistical behavior.  We consider applications of this framework to problems in federated
-learning, the delegation of data collection, and principal-agent regulatory mechanisms.
+                To be determined.
         </td></tr>
     </tbody></table>
 
-
-    <table id="Samuel Horvath">
+    <table id="Danqi Chen">
         <tbody><tr>
             <td class="date" rowspan="3">
                 10:10am
             </td>
             <td class="title">
-                Partially Personalized Federated Learning: Breaking the Curse of Data Heterogeneity
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
+                <a href="https://www.cs.princeton.edu/~danqic/"><b>Danqi Chen</b></a> (Princeton University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                We present a partially personalized formulation of Federated Learning (FL) that
-strikes a balance between the flexibility of personalization and cooperativeness of
-global training. In our framework, we split the variables into global parameters,
-which are shared across all clients, and individual local parameters, which are
-kept private. We prove that under the right split of parameters, it is possible to find
-global parameters that allow each client to fit their data perfectly, and refer to the
-obtained problem as overpersonalized. For instance, the shared global parameters
-can be used to learn good data representations, whereas the personalized layers
-are fine-tuned for a specific client. Moreover, we present a simple algorithm for
-the partially personalized formulation that offers significant benefits to all clients.
-In particular, it breaks the curse of data heterogeneity in several settings, such as
-training with local steps, asynchronous training, and Byzantine-robust training.
+                To be determined.
         </td></tr>
     </tbody></table>
-
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
@@ -162,81 +155,83 @@ training with local steps, asynchronous training, and Byzantine-robust training.
             </td>
         </tr>
     </tbody></table>
-
-    <table id="David Dao">
+    <table id="Quanquan Gu">
         <tbody><tr>
             <td class="date" rowspan="3">
-                11:00am
+                11:00 am
             </td>
             <td class="title">
-                <font color="red"> (Keynote) </font> Using artificial intelligence to help restore the natural world
+                Self-Play Preference Optimization for Language Model Alignment
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://daviddao.org/"><b>David Dao</b></a> (ETH Zurich)
+                <a href="http://web.cs.ucla.edu/~qgu/"><b>Quanquan Gu</b></a> (UCLA)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                "Nature has been deteriorating at rates unparalleled in human history and the implications are global. Climate change and biodiversity loss are two bullets in the same gun. Perils we face in parallel, both driven by deforestation and land use change. If global tropical deforestation were a country, its resulting emissions would be larger than the whole of the European Union. Time is running out and we need urgent climate and environmental action.
-Unfortunately, we cannot value what we cannot measure. And we are failing to capture nature’s full contributions to society. In this talk, we argue that machine learning (ML) can play a significant role in responding to this critical call for action – but only when we develop ML algorithms in co-design with local and Indigenous communities – by empowering digital monitoring, reporting and verification and conservation projects.
-
-We will present our work at Gainforest, a global science-based non-profit and currently a Finalist of the $10M XPRIZE Rainforest, and how Gainforest is deploying affordable top-down and bottom-up monitoring solutions on the ground in partnership with governments and conservation partners in the Global South."
+                Traditional reinforcement learning from human feedback (RLHF) approaches relying on parametric models like the Bradley-Terry model 
+                fall short in capturing the intransitivity and irrationality in human preferences. Recent advancements suggest that directly working 
+                with preference probabilities can yield a more accurate reflection of human preferences, enabling more flexible and accurate language 
+                model alignment. In this talk, I will introduce a self-play-based method for language model alignment, which treats the problem as a 
+                constant-sum two-player game aimed at identifying the Nash equilibrium policy. Our approach, dubbed \textit{Self-Play Preference Optimization} 
+                (SPPO), approximates the Nash equilibrium through iterative policy updates and enjoys theoretical convergence guarantee. Our method can 
+                effectively increase the log-likelihood of the chosen response and decrease that of the rejected response, which cannot be trivially 
+                achieved by symmetric pairwise loss such as Direct Preference Optimization (DPO) and Identity Preference Optimization (IPO). In our 
+                experiments, using only 60k prompts (without responses) from the UltraFeedback dataset and without any prompt augmentation, by leveraging 
+                a pre-trained preference model PairRM with only 0.4B parameters, SPPO can obtain a model from fine-tuning Mistral-7B-Instruct-v0.2 that 
+                achieves the state-of-the-art length-controlled win-rate of 28.53% against GPT-4-Turbo on AlpacaEval 2.0. It also outperforms the (iterative) 
+                DPO and IPO on MT-Bench and the Open LLM Leaderboard. Notably, the strong performance of SPPO is achieved without additional external 
+                supervision (e.g., responses, preferences, etc.) from GPT-4 or other stronger language models.
         </td></tr>
     </tbody></table>
 
-
-
-    <table id="Eric Xing">
+    <table id="Samuel Horvath">
         <tbody><tr>
             <td class="date" rowspan="3">
-                11:30am
+             11:20am
             </td>
             <td class="title">
-                FedPop: A Bayesian Approach for Personalised Federated Learning
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday1/"><b>Alain Durmus</b></a> (Ecole Polytechnique)
+                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Personalised federated learning (FL) aims at collaboratively learning a machine learning model tailored for each client. Albeit promising advances have been made in this direction, most of the existing approaches do not allow for uncertainty quantification which is crucial in many applications. In addition, personalisation in the cross-silo and cross-device setting still involves important issues, especially for new clients or those having a small number of observations. This paper aims at filling these gaps. To this end, we propose a novel methodology coined FedPop by recasting personalised FL into the population modeling paradigm where clients’ models involve fixed common population parameters and random effects, aiming at explaining data heterogeneity. To derive convergence guarantees for our scheme, we introduce a new class of federated stochastic optimisation algorithms that relies on Markov chain Monte Carlo methods. Compared to existing personalised FL methods, the proposed methodology has important benefits: it is robust to client drift, practical for inference on new clients, and above all, enables uncertainty quantification under mild computational and memory overheads. We provide nonasymptotic convergence guarantees for the proposed algorithms and illustrate their performances on various personalised federated learning tasks.
+                To be determined.
         </td></tr>
     </tbody></table>
 
+    
 
-
-    <table id="Eric Moulines">
+    <table id="Nikhil Kandpal">
         <tbody><tr>
             <td class="date" rowspan="3">
-                11:50am
+                11:40am
             </td>
             <td class="title">
-                Power Learning and Posthoc Privacy for the Private Embedding Release Problem in Collaborative Learning
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday1/"><b>Praneeth Vepakomma</b></a> (MIT and MBZUAI)
+                <a href="https://nkandpa2.github.io/"><b>Nikhil Kandpal</b></a> (University of Toronto)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                "Cloud-based machine learning inference is an emerging paradigm where users
-query by sending their data through a service provider who runs an ML model
-on that data and returns the answer. This talk shares a new framework of ""Posthoc Privacy"" that provides formal privacy guarantees for an arbitrarily trained neural network by
-linking its local Lipschitz constant with its local sensitivity for releasing the learnt representations (embeddings). To guarantee privacy using local sensitivity, we extend the Propose-Test-Release (PTR) framework to make it tractable for neural network queries to enable a private collaborative inference.  We then share a ""Power Mechanism"" that guarantees privacy for 'embedding' release and instead enables distributed training that requires only one round of communication. "
+                To be determined.
         </td></tr>
     </tbody></table>
-
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
-                12:15pm
+                12:00pm
             </td>
             <td class="title-special">
                 Lunch
@@ -248,74 +243,72 @@ linking its local Lipschitz constant with its local sensitivity for releasing th
             </td>
         </tr>
     </tbody></table>
-
-
-    <table id="Eric Xing">
+    <table id="Salman Khan">
         <tbody><tr>
             <td class="date" rowspan="3">
                 1:30pm
             </td>
             <td class="title">
-                Federated Conformal Predictors for Distributed Uncertainty Quantification
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://yaodongyu.github.io/"><b>Yaodong Yu</b></a> (UC Berkeley)
+                <a href="https://salman-h-khan.github.io/"><b>Salman Khan</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Conformal prediction is emerging as a popular paradigm for providing rigorous uncertainty quantification in machine learning since it can be easily applied as a post-processing step to already trained models. In this paper, we extend conformal prediction to the federated learning setting. The main challenge we face is data heterogeneity across the clients — this violates the fundamental tenet of exchangeability required for conformal prediction. We propose a weaker notion of partial exchangeability, better suited to the FL setting, and use it to develop the Federated Conformal Prediction (FCP) framework. We show FCP enjoys rigorous theoretical guarantees and excellent empirical performance on several computer vision and medical imaging datasets. Our results demonstrate a practical approach to incorporating meaningful uncertainty quantification in distributed and heterogeneous environments. We provide code used in our experiments https://github.com/clu5/federated-conformal.
+                To be determined.
         </td></tr>
     </tbody></table>
 
-
-
-    <table id="Eric Xing">
+    <table id="Hector Liu">
         <tbody><tr>
             <td class="date" rowspan="3">
                 1:50pm
             </td>
             <td class="title">
-                Overcoming Data Heterogeneity Challenges in Federated Learning
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday1/"><b>Xiaoxiao Li</b></a> (University of British Columbia)
+                <a href="https://hunterhector.github.io/"><b>Hector Liu</b></a> (Petuum and MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                To overcome barriers of data sharing, federated learning (FL) is a trending framework to enable multi-institutional collaboration in machine learning. This presentation will discuss our ongoing progress in designing FL algorithms that embrace the heterogeneity properties of data from theory to practice. First, I will present our work on theoretically understanding FL training convergence and generalization using neural tangent kernel, called FL-NTK. Second, I will present our algorithms for tackling feature heterogeneity, label heterogeneity, and device heterogeneity.  Third, I will present our up-to-date progress and promising future directions in FL for heterogenous data analysis.
+                To be determined.
         </td></tr>
     </tbody></table>
 
-
-
-
-    <table id="Eric Xing">
+    <table id="Francesco Locatello">
         <tbody><tr>
             <td class="date" rowspan="3">
                 2:10pm
             </td>
             <td class="title">
-                The Art of Learning Together: Robustness, Privacy and Fairness in Collaborative Learning
+                Are large models enough for causality? 
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday1/"><b>Karthik Nandakumar</b></a> (MBZUAI)
+                <a href="https://www.francescolocatello.com"><b>Francesco Locatello</b></a> (ISTA)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Most existing federated learning (FL) frameworks assume a mutualistic relationship between participants, i.e., all the participating clients behave honestly and benefit from one another. However, just like in nature, real-world applications of FL often have to encounter other forms of relationships such as commensalism (some participants benefit while others are not harmed), parasitism (a few participants benefit at the expense of others), and competition (all the participants compete to maximize their individual benefits). This is especially true in the cross-silo setting, which typically requires collaboration between competitors (e.g., financial and healthcare institutions) driven by ulterior business interests. To operate in non-mutualistic scenarios, FL algorithms must satisfy additional properties such as collaboration fairness and Byzantine robustness. In this talk, we first introduce a distance-based outlier suppression mechanism to improve the robustness of FL algorithms against poisoning attacks by malicious clients. Next, we propose a framework called Confidential and Private Decentralized (CaPriDe) learning, which optimally leverages the power of fully homomorphic encryption (FHE) to enable collaborative learning without compromising on the confidentiality and privacy of data. Finally, we highlight the need for new definitions of fairness in a collaborative setting and novel methods for assessing them in a transparent and privacy-preserving manner.
+                Machine learning and AI have the potential to transform data-driven scientific discovery, enabling accurate predictions for several 
+                scientific phenomena. Much of the current progress is driven by scale and, conveniently, many scientific questions require analyzing 
+                massive amounts of data. At the same time, in scientific applications predictions are often incorporated into broader analysis to draw 
+                new insights that are causal in nature. In this talk I will explore the role of scale in causal analyses. I will start by showing it is 
+                possible to extract causal knowledge from a pre-trained statistical model that was trained without causal considerations. Next, I will
+                discuss when, how, and why causal directions can be directly predicted by transformers trained with supervised learning in a controlled 
+                synthetic setting. Finally, I will discuss the open challenges solving real-world causal downstream tasks in the sciences. For this, I 
+                will present ISTAnt, the first real-world benchmark for estimating causal effects from high-dimensional observations in experimental ecology.
         </td></tr>
     </tbody></table>
-
-
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
@@ -331,72 +324,71 @@ linking its local Lipschitz constant with its local sensitivity for releasing th
             </td>
         </tr>
     </tbody></table>
-
-    
-    <table id="Eric Xing">
+    <table id="Nils Hendrik Lukas">
         <tbody><tr>
             <td class="date" rowspan="3">
                 3:00pm
             </td>
             <td class="title">
-                How to Collaborate with your Friends and Foes
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="http://spkreddy.org/"><b>Sai Praneeth Karimireddy</b></a> (UC Berkeley)
+                <a href="https://nilslukas.github.io"><b>Nils Hendrik Lukas</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                We study the objective of a participant in FL in two settings. First, in the friendly setting, all participants want to improve their own model quality but do not mind improving each other's as well. In this setting, we show how clustering naturally emerges as the optimal algorithm to simultaneously improve everyone's model quality. In the second setting, the participants could be competing firms - in such a setting they care about doing better than others i.e. the relative quality. Even in this competitive setting, we show defection-proof iterative federated algorithms which is guaranteed to  simultaneously improve the utilities of all participants.
+                To be determined.
         </td></tr>
     </tbody></table>
 
-    <table id="Eric Xing">
+    <table id="Preslav Nakov">
         <tbody><tr>
             <td class="date" rowspan="3">
                 3:20pm
             </td>
             <td class="title">
-                Data Valuation &amp; Incentives in Collaborative Machine Learning
+                Factuality Challenges in the Era of Large Language Models: Can We Keep LLMs Safe and Factual?
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://scholar.google.com/citations?user=2P-Q09UAAAAJ&amp;hl=en/"><b>Bryan Kian Hsiang Low</b></a> (National University of Singapore)
+                <a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/"><b>Preslav Nakov</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                In this talk, Dr. Bryan Low will present his preliminary research efforts in valuing data and incentivizing multiple parties with data to collaborate in building higher-quality models, such as through the fairness, individual rationality, and privacy incentives. 
+                We will discuss the risks, the challenges, and the opportunities that Large Language Models (LLMs) bring regarding factuality. We will then present a number of LLM fact-checking tools recently developed at MBZUAI: (i) Factcheck-Bench, a fine-grained evaluation benchmark and framework for fact-checking the output of LLMs, (ii) OpenFactVerification (Loki), an open-source tool for fact-checking the output of LLMs, developed based on Factcheck-Bench and optimized for speed and quality, (iii) OpenFactCheck, a framework for building customized fact-checking systems and for benchmarking entire LLMs, and (iv) LM-Polygraph, a tool to predict an LLM's uncertainty in its output using cheap and fast uncertainty quantification techniques. Finally, we will discuss the safety mechanisms we incorporated in Jais-chat, the world's best open Arabic-centric foundation and instruction-tuned LLM.
         </td></tr>
     </tbody></table>
 
-    <table id="Eric Xing">
+    <table id="Karthik Nandakumar">
         <tbody><tr>
             <td class="date" rowspan="3">
                 3:40pm
             </td>
             <td class="title">
-                Towards Auction-based Federated Learning
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://sites.google.com/site/hanyushomepage/home/"><b>Han Yu</b></a> (Nanyang Technological University)
+                <a href="https://www.sprintai.org/nkarthik/"><b>Karthik Nandakumar</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Federated Learning (FL) is an emerging area of AI focusing on training machine learning models in a privacy-preserving manner. The success of FL, especially in open collaboration settings, rests on being able to continuously attract high quality data owners to participate. This, at the same time, also opens the FL to adversaries trying to exploit other parties’ sensitive privacy information. It is important to adopt an ecosystem management approach to building trust and controlling risk in FL. In this talk, I will share with you some attempts we made at the Trustworthy Federated Ubiquitous Learning (TrustFUL) Research Lab in the direction of incorporating auction mechanisms into FL to support dynamic formation of collaborative machine learning groups and provide the necessary governance to support the long-term sustainable operation of such an ecosystem.
+                To be determined.
         </td></tr>
     </tbody></table>
 
+    
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
-                4pm
+                4:00pm
             </td>
             <td class="title-special">
                 Panel Discussion
@@ -408,13 +400,5 @@ linking its local Lipschitz constant with its local sensitivity for releasing th
             </td>
         </tr>
     </tbody></table>
-
-
-    
-
-    
-
-    
-
 
 </body></html>

@@ -46,7 +46,7 @@
         </tr>
     </tbody></table>
 
-    <h2>Day 2 Program (Dec 10, Sun)</h2>
+    <h2>Day 2 Program (June 4, Tue)</h2>
 
     <table>
         <tbody><tr class="speaker">
@@ -65,78 +65,87 @@
         </tr>
     </tbody></table>
 
-
-
-    <table id="Michael I. Jordan">
+    <table id="Maxim Panov">
         <tbody><tr>
             <td class="date" rowspan="3">
                 9:30am
             </td>
             <td class="title">
-                Federated Learning in Practice: Reflections and Projections
+                Uncertainty Quantification for Generative Language Models
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://scholar.google.com/citations?user=m8NUgw0AAAAJ&amp;hl=en/"><b>Peter Kairouz</b></a> (Google)
+                <a href="https://mbzuai.ac.ae/study/faculty/maxim-panov/"><b>Maxim Panov</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Introduced in 2016 as a privacy-enhancing technique, federated learning has made significant strides in recent years. This presentation offers a retrospective view, delving into the foundational principles of federated learning, encompassing the diverse variants and definitions presented in the 'Advances and Open Problems in Federated Learning' manuscript. We highlight key milestones, spotlighting the major implementations within the Google ecosystem and explaining the meticulous efforts dedicated to the fusion of federated learning with secure aggregation and formal differential privacy guarantees. We also touch on the nascent trends on the horizon and provide insights into the evolving landscape of federated learning and its definitions. These evolutionary steps are essential to perpetuate its practical impact.
+                The widespread deployment of large language models (LLMs) has made ML-based applications even more vulnerable to risks of causing various forms of harm to users. For example, models often “hallucinate”, i.e., fabricate facts without providing users an apparent means to validate their statements. Uncertainty estimation (UE) methods could be used to detect unreliable generations unlocking the safer and more responsible use of LLMs in practice. UE methods for generative LLMs are a subject of cutting-edge research, which is currently quite scarce and scattered. We systemize these efforts, discuss common caveats, and provide suggestions for the development of novel techniques in this area.
         </td></tr>
     </tbody></table>
 
-
-
-    <table id="David Dao">
+    <table id="Ahmed Salem">
         <tbody><tr>
             <td class="date" rowspan="3">
                 9:50am
             </td>
             <td class="title">
-                Compression: Exact Error Distribution and tight convergence rates for Federated Learning
+                The Crescendo Effect: Understanding Multi-Turn Jailbreaks in Large Language Models
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Aymeric Dieuleveut</b></a> (Ecole Polytechnique)
+                <a href="https://ahmedsalem2.github.io/"><b>Ahmed Salem</b></a> (Microsoft)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Compression schemes have been extensively used in Federated Learning (FL) to reduce the communication cost of distributed learning. While most approaches rely on a bounded variance assumption of the noise produced by the compressor, we investigate two aspects to gain better understanding of the impact of compression on dynamics.
-First, we show the use of compression and aggregation schemes that produce a specific error distribution, e.g., Gaussian or Laplace, on the aggregated data. We present and analyze different aggregation schemes based on layered quantizers achieving exact error distribution. We provide different methods to leverage the proposed compression schemes to obtain compression-for-free in differential privacy applications. Our general compression methods can recover and improve standard FL schemes with Gaussian perturbations such as Langevin dynamics and randomized smoothing.
-Second, we go beyond the classical worst-case analysis. To do so, we focus on the case of least-squares regression (LSR) and analyze a general stochastic approximation algorithm for minimizing quadratic functions relying on a random field. We consider weak assumptions on the random field, tailored to the analysis (specifically, expected Holder regularity), and on the noise covariance, enabling the analysis of various randomizing mechanisms, including compression.
+                Large Language Models (LLMs) are powerful tools capable of generating content that might violate the principles of Responsible AI (RAI). These 
+                models are engineered to steer clear of engaging in such illegal or unethical topics through a process known as alignment. This process 
+                typically focuses on preventing single-turn jailbreaks, which are deliberate attacks attempting to circumvent the safety alignment. In this 
+                talk, I will introduce a new category of jailbreaks that are executed over multiple turns, and I will showcase a specific multi-turn 
+                jailbreak called Crescendo. Crescendo interacts with the model in a seemingly benign manner and gradually leads to a successful jailbreak. 
+                The talk will also cover Crescendomation, an automated tool designed to execute the Crescendo attack. Finally, I will discuss the complexities 
+                involved in evaluating jailbreaks and share the results of Crescendomation's assessment and the lessons learned.
         </td></tr>
     </tbody></table>
 
-    <table id="Eric Xing">
+    
+    <table id="Guokan Shang">
         <tbody><tr>
             <td class="date" rowspan="3">
                 10:10am
             </td>
             <td class="title">
-                <font color="red"> (Keynote) </font> SuperFed: Cost-Efficient Federated Neural Architecture Search for On-Device Inference
+                Evaluating Linguistic Diversity of Large Language Models
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Alexey Tumanov</b></a> (Georgia Tech)
+                <a href="https://shang.tech/aboutme/"><b>Guokan Shang</b></a> (MBZUAI France Lab)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Neural Architecture Search (NAS) for Federated Learning (FL) is an emerging field to automate the design and training of Deep Neural Networks (DNNs) when data cannot be centralized due to privacy, communication costs, and regulatory restrictions. Recent federated NAS methods not only reduce manual effort but also provide more accuracy than traditional FL like FedAvg which use predefined DNN architectures. However, most state-of-the-art federated NAS methods follow a multi-stage FL training that often leads to high communication costs. Furthermore, these methods severely restrict DNN architecture diversity and thereby provide sub-optimal architectures when on-device inference metrics like latency/FLOPs are considered. To address these challenges, we propose SuperFed: a single-stage federated NAS method that jointly trains a rich diversity of deep neural network (DNN) subarchitectures (subnets) contained inside a single DNN supernetwork. Clients can then perform NAS locally to find specialized DNNs by extracting different parts of the trained supernet with no additional training. SuperFed takes O(1) (instead of O(k)) cost to find specialized DNN architectures in FL for any k hardware/latency targets. As part of SuperFed, we introduce MaxNet — a novel FL training algorithm that performs joint federated optimization of a large number of DNN architectures cost-efficiently. MaxNet trains a family of ≈ 5*10^8 diverse subnets with an order of magnitude reduction in communication and computatoin cost compared to state-of-the-art.
+                Recently, Large Language Models (LLMs) have gained widespread recognition and usage. However, their 
+                evaluation predominantly concentrates on task-solving performance. Diverging from this usual emphasis, 
+                we focus on linguistic perspectives, specifically linguistic diversity, a fundamentally important but 
+                significantly overlooked aspect of language generation. The talk begins with a taxonomy of linguistic 
+                diversity evaluation metrics, followed by a presentation of our recent study: "The Curious Decline of 
+                Linguistic Diversity: Training Language Models on Synthetic Text". Our research found that training LLMs 
+                on predecessor-generated text—where language models are trained on synthetic data produced by previous 
+                models—causes a consistent decrease in the lexical, syntactic, and semantic diversity of the model outputs 
+                through successive iterations. This decline is particularly notable for tasks demanding high levels of 
+                creativity. Our study highlights the need for careful consideration of the long-term effects of such 
+                training approaches, particularly concerning the preservation by LLMs of human linguistic richness.
         </td></tr>
     </tbody></table>
-
-
 
     <table>
         <tbody><tr>
             <td class="date" rowspan="2">
-                10:40pm
+                10:30am
             </td>
             <td class="title-special">
                 Coffee Break
@@ -149,61 +158,33 @@ Second, we go beyond the classical worst-case analysis. To do so, we focus on th
         </tr>
     </tbody></table>
 
-
-
-
-
-    <table id="David Dao">
+    <table id="Michalis Vazirgiannis">
         <tbody><tr>
             <td class="date" rowspan="3">
                 11:00am
             </td>
             <td class="title">
-                First Order Methods with Markovian Noise: from Acceleration to Variational Inequalities
+                To be determined.
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Serguei Samsonov</b></a> (HSE)
+                <a href="https://scholar.google.gr/citations?user=aWGJYcMAAAAJ&hl=en"><b>Michalis Vazirgiannis</b></a> (Ecole Polytechnique)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                We present a unified approach for the theoretical analysis of first-order gradient methods for stochastic optimization and variational inequalities involving Markovian noise. Our approach covers scenarios for both non-convex and strongly convex minimization problems. To achieve an optimal (linear) dependence on the mixing time of the underlying noise sequence, we use the randomized batching scheme, which is based on the multilevel Monte Carlo method. Moreover, our technique allows us to eliminate the limiting assumptions of previous research on Markov noise, such as the need for a bounded domain and uniformly bounded stochastic gradients. Our extension to variational inequalities under Markovian noise is original. Additionally, we provide lower bounds that match the oracle complexity of our method in the case of strongly convex optimization problems
-        </td></tr>
-    </tbody></table>
-
-
-
-    <table id="Samuel Horvath">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                11:20am
-            </td>
-            <td class="title">
-                Uncovering Low-Rank Structures via Trainable Decompositions
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://mbzuai-cl.github.io/2023/programday2/"><b>Stefanos Laskaridis</b></a> (BRAVE)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                "Deep Neural Networks (DNNs) have been a large driver and enabler for AI breakthroughs in recent years. These models have been getting larger in their attempt to become more accurate and tackle new upcoming use-cases. However, the training process of such large models is a costly and time-consuming process, which typically yields a single model to fit all targets. To mitigate this, various techniques have been proposed in the literature, including pruning, sparsification or quantization of the model weights and updates. While able to achieve high compression rates, they often incur computational overheads or accuracy penalties. Alternatively, factorization methods have been leveraged to incorporate low-rank compression in the training process. Similarly, such techniques (e.g. SVD) frequently rely on the computationally expensive decomposition of layers and are potentially sub-optimal for non-linear models, such as DNNs. 
-
-In this talk, we are showcasing Maestro, a framework for trainable low-rank layers. Instead of regularly applying a priori decompositions such as SVD, the low-rank structure is built into the training process through a generalized variant of Ordered Dropout. This method imposes an importance ordering via sampling on the decomposed DNN structure. Our theoretical analysis demonstrates that our method recovers the SVD decomposition of linear mapping on uniformly distributed data and PCA for linear autoencoders. We further apply our technique on DNNs and empirically illustrate that Maestro enables the extraction of lower footprint models that preserve model performance while allowing for graceful accuracy-latency tradeoff for the deployment to devices of different capabilities."
+                To be determined.
         </td></tr>
     </tbody></table>
 
     <table id="Eric Xing">
         <tbody><tr>
             <td class="date" rowspan="3">
-                11:40am
+            11:20am
             </td>
             <td class="title">
-                TBD
+                To be determined.
             </td>
         </tr>
         <tr>
@@ -213,9 +194,156 @@ In this talk, we are showcasing Maestro, a framework for trainable low-rank laye
         </tr>
         <tr>
             <td class="abstract">
-                TBD
+                To be determined. 
         </td></tr>
     </tbody></table>
+
+
+
+    <table id="Han Zhao">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:40pm 
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://hanzhaoml.github.io"><b>Han Zhao</b></a> (UIUC)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <!-- <table id="Danqi Chen">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                9:30am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.cs.princeton.edu/~danqic/"><b>Danqi Chen</b></a> (Princeton University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Samuel Horvath">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+             9:50am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Salman Khan">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                10:10am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://salman-h-khan.github.io/"><b>Salman Khan</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+
+
+    <table id="Preslav Nakov">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:00am
+            </td>
+            <td class="title">
+                Factuality Challenges in the Era of Large Language Models: Can We Keep LLMs Safe and Factual?
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/"><b>Preslav Nakov</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We will discuss the risks, the challenges, and the opportunities that Large Language Models (LLMs) bring regarding factuality. We will then present a number of LLM fact-checking tools recently developed at MBZUAI: (i) Factcheck-Bench, a fine-grained evaluation benchmark and framework for fact-checking the output of LLMs, (ii) OpenFactVerification (Loki), an open-source tool for fact-checking the output of LLMs, developed based on Factcheck-Bench and optimized for speed and quality, (iii) OpenFactCheck, a framework for building customized fact-checking systems and for benchmarking entire LLMs, and (iv) LM-Polygraph, a tool to predict an LLM's uncertainty in its output using cheap and fast uncertainty quantification techniques. Finally, we will discuss the safety mechanisms we incorporated in Jais-chat, the world's best open Arabic-centric foundation and instruction-tuned LLM.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Karthik Nandakumar">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:20am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.sprintai.org/nkarthik/"><b>Karthik Nandakumar</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    
+    
+
+    <table id="Maxim Panov">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:40am
+            </td>
+            <td class="title">
+                Uncertainty Quantification for Generative Language Models
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/maxim-panov/"><b>Maxim Panov</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                The widespread deployment of large language models (LLMs) has made ML-based applications even more vulnerable to risks of causing various forms of harm to users. For example, models often “hallucinate”, i.e., fabricate facts without providing users an apparent means to validate their statements. Uncertainty estimation (UE) methods could be used to detect unreliable generations unlocking the safer and more responsible use of LLMs in practice. UE methods for generative LLMs are a subject of cutting-edge research, which is currently quite scarce and scattered. We systemize these efforts, discuss common caveats, and provide suggestions for the development of novel techniques in this area.
+        </td></tr>
+    </tbody></table> -->
 
     <table>
         <tbody><tr>
@@ -234,7 +362,7 @@ In this talk, we are showcasing Maestro, a framework for trainable low-rank laye
     </tbody></table>
 
 
-    <table id="Eric Xing">
+    <!-- <table id="Eric Xing">
         <tbody><tr>
             <td class="date" rowspan="3">
                 2pm
@@ -276,7 +404,7 @@ In practice, however,the data is fragmented across multiple humanitarian actors 
 
 In this talk, I will share my experience of collaborating with several NGOs to make data-driven tools for humanitarian interventions. I will make a semantic mapping of the seven cardinal humanitarian principles (neutrality, impartiality, independence, humanity, voluntary service, unity, universality) with distributed learning and also highlight methodological approaches that could integrate humanitarian principles into the design of these tools to better ensure real-world adoption.
         </td></tr>
-    </tbody></table>
+    </tbody></table> -->
 
 
 
